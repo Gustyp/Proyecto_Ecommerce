@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carrito-de-compras {
+    font-size: 1em;
+    color: #ffff;
+    padding-right: 1em;
+    margin: auto;
+    padding: 1em 0;
+}
+
+.item-count {
+    max-width: 320px;
+    margin: auto;
+}
+
+.input-contador {
+    width: 50%;
+    height: 40px;
+}
+
+@import "~bootstrap/scss/bootstrap";
