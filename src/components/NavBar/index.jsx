@@ -1,12 +1,12 @@
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar} from "react-bootstrap";
 import CartWidget from "../CartWidget";
 
 const NavBar = () => {
     return (
-        <Navbar collapseOnSelect expand='lg' bg="dark" variant="dark">
+        <Navbar fixed="top" collapseOnSelect expand='lg' bg="dark" variant="dark" className="navbar">
             <Container>
                 <Navbar.Brand href="#home">E-commerce</Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+                <Navbar.Toggle/>
                 <Navbar.Collapse>
                     <Nav className="ms-auto">
                         <Nav.Link className="me-5" href="#home">Home</Nav.Link>
@@ -17,7 +17,7 @@ const NavBar = () => {
                         <Nav.Link className="me-3" href="#seccion5">Sección 5</Nav.Link>
                         <Nav.Link className="me-3" href="#seccion6">Sección 6</Nav.Link>
                     </Nav>
-                    <CartWidget />
+                    <CartWidget/>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
