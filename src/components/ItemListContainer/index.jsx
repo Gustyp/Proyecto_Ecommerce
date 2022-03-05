@@ -1,14 +1,17 @@
-import ItemCount from '../ItemCount';
+// import ItemCount from '../ItemCount';
+import { Container } from 'react-bootstrap';
+import ItemList from '../ItemList';
 
 const ItemListContainer = ({mensaje}) => {
-    const stock = 5;
-    const inicio = 1;
+    // const stock = 5;
+    // const inicio = 1;
     return (
         <>
-            <div className="container mt-5 pt-5 text-center">
-                <h1>{mensaje}</h1>
-            </div>
-            <ItemCount stock={stock} inicio={inicio} />
+            <Container className='mt-5 pt-5 pb-3 text-center'>
+            <h1>{mensaje}</h1>
+            </Container>
+            <ItemList />
+            {/* <ItemCount stock={stock} inicio={inicio} /> */}
         </>
     );
 }
