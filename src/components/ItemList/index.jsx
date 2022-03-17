@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
-import getProductos from "../../Mock/baseDeDatos";
+import { getProductos } from "../../Mock/baseDeDatos";
 import Item from "../Item";
 
 const ItemList = () => {

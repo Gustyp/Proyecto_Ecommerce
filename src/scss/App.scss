@@ -10,7 +10,7 @@
     top: 0;
     box-shadow: 0px 0.5px 18px -1px rgba(66, 58, 57, 0.31);
     z-index: 100;
-}
+}   
 
 .carrito-de-compras {
     font-size: 1em;
@@ -29,6 +29,16 @@
 .input-contador {
     width: 50%;
     height: 40px;
+}
+
+.sinDecoracion {
+    text-decoration: none;
+    color: #ffff;
+}
+
+a:hover {
+    color: yellow !important;
+
 }
 
 @import "~bootstrap/scss/bootstrap";

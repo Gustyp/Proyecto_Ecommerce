@@ -1,21 +1,17 @@
 import { Container, Nav, Navbar} from "react-bootstrap";
+import { NavLink, Link } from "react-router-dom";
 import CartWidget from "../CartWidget";
 
 const NavBar = () => {
     return (
-        <Navbar fixed="top" collapseOnSelect expand='lg' bg="dark" variant="dark" className="navbar">
+        <Navbar sticky="top" collapseOnSelect expand='lg' bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="#home">E-commerce</Navbar.Brand>
+                <Navbar.Brand><Link className="me-3 sinDecoracion" to="/">E-commerce</Link></Navbar.Brand>
                 <Navbar.Toggle/>
                 <Navbar.Collapse>
                     <Nav className="ms-auto">
-                        <Nav.Link className="me-5" href="#home">Home</Nav.Link>
-                        <Nav.Link className="me-3" href="#seccion1">Sección 1</Nav.Link>
-                        <Nav.Link className="me-3" href="#seccion2">Sección 2</Nav.Link>
-                        <Nav.Link className="me-3" href="#seccion3">Sección 3</Nav.Link>
-                        <Nav.Link className="me-3" href="#seccion4">Sección 4</Nav.Link>
-                        <Nav.Link className="me-3" href="#seccion5">Sección 5</Nav.Link>
-                        <Nav.Link className="me-3" href="#seccion6">Sección 6</Nav.Link>
+                        <NavLink className="me-3 sinDecoracion" to="/">Home</NavLink>
+                        <NavLink className="me-3 sinDecoracion" to="/products">Productos</NavLink>
                     </Nav>
                     <CartWidget/>
                 </Navbar.Collapse>

@@ -1,9 +1,10 @@
 import { Card, Col, Container, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const Item = ({ producto }) => {
-    // console.log(producto);
+    const navigate = useNavigate();
     return (
-        <Col xs={6} md={4}>
+        <Col xs={12} sm={6} md={4}>
             <Card>
                 <Card.Body className="m-auto">
                     <Container fluid className="d-flex align-items-center">
@@ -11,11 +12,10 @@ const Item = ({ producto }) => {
                     </Container>
                     <Container fluid className="d-flex flex-column align-items-start">
                         <p>Nombre: {producto.nombre}</p>
-                        <p>Descripcion: {producto.descripcion}</p>
                         <p>Precio: ${producto.precio}</p>
                     </Container>
                     <Container className="d-flex justify-content-center">
-                        <Button className="btn btn-dark">Ver más detalles</Button>
+                        <Button className="btn btn-dark" onClick={() => navigate(`/products/${producto.id}`)}>Ver más detalles</Button>
                     </Container>
                 </Card.Body>
             </Card>
